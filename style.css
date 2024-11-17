@@ -17,6 +17,24 @@ body {
 .grid-3-columns{
     grid-template-columns: 1fr 2fr 2fr; 
  }
+ .grid-3-col{
+   grid-template-columns: 1fr 1fr 1fr; 
+ }
+ .card{
+    background-color: white;
+    margin-top: 30px 0;
+    border: none;
+ }
+ .card h4{
+    font-family: "Playfair Display", sans-serif;
+ }
+ .card-body{
+    padding:30px;
+    border: none;
+ }
+ .card-footer{
+    padding: 0px 30px 30px;
+ }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
     url(img-cover.jpg);
@@ -84,6 +102,33 @@ main h3{
     color:#292537;
     margin:0;
 }
+main h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color:#272044;
+    margin:0;
+ }
+ main h5{
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    color:#272044;
+    margin:0;
+ }
+ main .btn{
+    display:block;
+    color:white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding:16px;
+    background-color: #272044;
+    text-decoration: none;
+ }
 main p{
     font-weight: 400;
     font-size: 16px;
@@ -94,6 +139,7 @@ main p{
 }
 .img-responsive{
     max-width: 100%;
+    display: block;
 }
 footer {
   color: white;
@@ -130,10 +176,20 @@ footer a {
   opacity: 0.7;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding:100px 0;
+  padding:100px;
 }
+section.secondary{
+  background-color: #f8f8f8;  
+}
+section.secondary h2{
+    text-align: center;
+  }
+  section.secondary h3{
+    text-align: center;
+    margin-bottom:20px;
+  }
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
