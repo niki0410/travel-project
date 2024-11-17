@@ -3,6 +3,7 @@ body {
   margin: 0;
   background-color: #292537;
 }
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -20,6 +21,10 @@ body {
  .grid-3-col{
    grid-template-columns: 1fr 1fr 1fr; 
  }
+ .embed{
+    width: 100%;
+    aspect-ratio: 1/1;
+ }
  .card{
     background-color: white;
     margin-top: 30px 0;
@@ -28,6 +33,10 @@ body {
  .card h4{
     font-family: "Playfair Display", sans-serif;
  }
+ .card-header.grid{
+grid-gap:0;
+
+}
  .card-body{
     padding:30px;
     border: none;
@@ -138,7 +147,7 @@ main p{
     text-align: justify;
 }
 .img-responsive{
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 footer {
@@ -190,6 +199,14 @@ section.secondary h2{
     text-align: center;
     margin-bottom:20px;
   }
+  section.third-section h2{
+    text-align: center;
+  }
+  section.third-section h3{
+    text-align: center;
+    margin-bottom:20px;
+
+  }
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -209,6 +226,12 @@ section.secondary h2{
   }
   section{
     padding: 30px ;
-
   }
+  .card-header img{
+    display: none;
+  }
+  .embed{
+    aspect-ratio: 16/9;
+  }
+
 }
